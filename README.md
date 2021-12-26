@@ -1,4 +1,4 @@
-This project is a springboot base application, that intends to achieve below functionalities.
+This project is a springboot base application, that intends to achieve below functionalities. The functionalities for Task2,Task3 and Task4 are in TaskUtil inside AppUtils directories while the Task1 is a rest service module with and integrated endpoint to process laundry pickup date.
 TASK 1
 NODE.JS BACKEND DEVELOPER APTITUDE TEST
 Assuming you are working on the backend of a laundry company mobile app, users can select the number of times they want the laundry company to pick up their clothes in a month, create an API that:
