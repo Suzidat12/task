@@ -1,3 +1,4 @@
+
 This project is a springboot base application, that intends to achieve below functionalities. The functionalities for Task2,Task3 and Task4 are in TaskUtil inside AppUtils directories while the Task1 is a rest service module with and integrated endpoint to process laundry pickup date.
 TASK 1
 NODE.JS BACKEND DEVELOPER APTITUDE TEST
@@ -45,3 +46,15 @@ Logic workflow
 - iterate over the array and push the square into the created list
 - Sort the created list at the end of the iteration 
 - Then return another copy of the sorted array
+
+
+To run the application
+1. Setup Java runtime environment
+2. Install and configure maven
+3. Open the project in terminal/commdan line
+4. Then run with: mvn clean spring-boot:run
+
+To clean the project
+do: mvn clean
+To build the project(into .jar)
+do: mvn clean install
