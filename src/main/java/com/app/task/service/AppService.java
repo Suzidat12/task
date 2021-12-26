@@ -50,7 +50,7 @@ public class AppService {
             log.warn("Invalid give day {}",load.getPickup_day().toUpperCase());
             return new ResponseEntity("Invalid pickup day", HttpStatus.BAD_REQUEST);
         }
-        if (load.getRecurrence() > 4) {
+        if (load.getRecurrence() > 4 || load.getRecurrence()<=0) {
             log.warn("Recurrence period within a month should be between 1 and 4");
             return new ResponseEntity("Invalid pickup reoccurence", HttpStatus.BAD_REQUEST);
         }
