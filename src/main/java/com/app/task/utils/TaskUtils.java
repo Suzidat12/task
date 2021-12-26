@@ -18,8 +18,8 @@ public class TaskUtils {
         return null;
     }
 
-    public static Integer[] getTask3(Integer arr[]) {
-        Integer result[] = new Integer[arr.length];
+    public static int[] getTask3(int arr[]) {
+        int result[] = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             int count = 0;
             for (int j = i + 1; j < arr.length; j++) {
@@ -32,7 +32,7 @@ public class TaskUtils {
         }
         return result;
     }
-    public static Integer[] getTask4(int arr[]) {
+    public static int[] getTask4(int[] arr) {
         List<Integer> st = new ArrayList<>(); //Array list is been used to take care of the duplicate numbers
 
         for (int i = 0; i < arr.length; i++) {
@@ -40,7 +40,11 @@ public class TaskUtils {
             st.add(num);
         }
         Collections.sort(st); //use to sort method is use to sort the list of integers
-        return st.stream().toArray(Integer[]::new);
+       int result[]= new int[st.size()];
+       for(int i=0; i<st.size(); i++){
+           result[i]=st.get(i);
+       }
+       return result;
     }
 
     public static void main(String[] args) {

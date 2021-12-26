@@ -1,4 +1,4 @@
-package com.app.task.task1;
+package com.app.task.route;
 
 import com.app.task.dto.PickupRequest;
 import com.app.task.service.AppService;
